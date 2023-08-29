@@ -22,7 +22,6 @@ int main(){
         scanf("%f", &vetor[i]);
     }
 
-
     //ordenando em ordem decrescente o vetor dos lados:
     float aux;
     for(int i = 0; i<3; i++){
