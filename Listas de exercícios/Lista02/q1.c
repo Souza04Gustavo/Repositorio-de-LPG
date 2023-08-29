@@ -1,12 +1,15 @@
 #include <stdio.h>
 
-
 int tipo_triangulo(float x, float y, float z){
 
-    if(x < y + z){
-    return 0;
-    }else{
-        return 1;
+    if(x >= y + z){
+        printf("0. Os lados não formam um triângulo (ou seja, a soma de dois deles é menor ou igual ao outro lado.\n");
+    }else if(x == y && y == z){
+        printf("1. Triângulo equilátero.\n");
+    }else if(x == y || y ==  z || z ==x){
+        printf("2. Triângulo isóceles.\n");
+    }else if( x != y && y != z && x != z){
+        printf("3. Triângulo escaleno.\n");
     }
 
 }
@@ -18,6 +21,7 @@ int main(){
     for(int i = 0; i < 3; i++){
         scanf("%f", &vetor[i]);
     }
+
 
     //ordenando em ordem decrescente o vetor dos lados:
     float aux;
@@ -36,8 +40,6 @@ int main(){
     y = vetor[1];
     z = vetor[2];
 
-    int num;
-    num = tipo_triangulo(x, y, z);
-    printf("%i", num);
+    tipo_triangulo(x, y, z);
 
 }
