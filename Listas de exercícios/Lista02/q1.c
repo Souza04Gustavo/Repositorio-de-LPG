@@ -3,14 +3,14 @@
 int tipo_triangulo(float x, float y, float z){
 
     if(x >= y + z){
-        printf("0. Os lados não formam um triângulo (ou seja, a soma de dois deles é menor ou igual ao outro lado.\n");
+       printf("0. Os lados não formam um triângulo (ou seja, a soma de dois deles é menor ou igual ao outro lad.\n");
     }else if(x == y && y == z){
-        printf("1. Triângulo equilátero.\n");
+         printf("1. Triângulo equilátero.\n");
     }else if(x == y || y ==  z || z ==x){
-        printf("2. Triângulo isóceles.\n");
+       printf("2. Triângulo isóceles.\n");
     }else if( x != y && y != z && x != z){
         printf("3. Triângulo escaleno.\n");
-    }
+       }
 
 }
 
