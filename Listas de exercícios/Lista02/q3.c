@@ -4,6 +4,7 @@
 int analise(char c){
 
     int x;
+    int cont = 0;
 
     switch( c ){
         case '0':
@@ -55,10 +56,12 @@ int analise(char c){
         break;
 
         default:
-        printf("O caracter inserido nao é um digito\n");
+        printf("Esse caracter inserido nao é um valor inteiro\n");
+        cont++;
     } 
 
-    printf("%i", x);
+    if(cont == 0)
+    printf("Esse caracter inserido é o digito %i\n", x);
 
 }
 
