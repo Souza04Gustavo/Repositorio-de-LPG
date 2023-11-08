@@ -5,7 +5,7 @@
 #define GRAY    "\x1B[30m"
 #define RESET   "\x1B[0m"
 
-int a, b;
+int a, b, c;
 
 int troca(int *x, int *y){
 
